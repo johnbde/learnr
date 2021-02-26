@@ -25,6 +25,15 @@ initialize_tutorial <- function() {
       tutorial_diagnostics_html_dependency()      
     ))
 
+    htmltools::HTML("
+                <script>
+            $(document).ready(function() {
+                $('.section').css('display', 'none');
+                $('#tutorial-topic').css('display', 'none');
+            });
+        </script>
+")
+
 
     # session initialization (forward tutorial metadata)
     rmarkdown::shiny_prerendered_chunk(
