@@ -22,15 +22,7 @@ initialize_tutorial <- function() {
       idb_html_dependency(),
       tutorial_html_dependency(),
       tutorial_autocompletion_html_dependency(),
-      tutorial_diagnostics_html_dependency(),
-      # hide tutorials
-       htmltools::HTML("<script>
-        $(document).ready(function() {
-            $('.section').css('display', 'none');
-            $('#tutorial-topic').css('display', 'none');
-        });
-    </script>")
-      
+      tutorial_diagnostics_html_dependency()      
     ))
 
 
