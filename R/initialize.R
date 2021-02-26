@@ -25,6 +25,7 @@ initialize_tutorial <- function() {
       tutorial_diagnostics_html_dependency()
     ))
 
+
     # session initialization (forward tutorial metadata)
     rmarkdown::shiny_prerendered_chunk(
       'server',
@@ -51,6 +52,15 @@ initialize_tutorial <- function() {
 
     # set initialized flag to ensure single initialization
     knitr::opts_knit$set(tutorial.initialized = TRUE)
+    
+    # hide tutorials
+    htmltools::HTML("<script>
+        $(document).ready(function() {
+            $('.section').css('display', 'none');
+            $('#tutorial-topic').css('display', 'none');
+        });
+    </script>")
+    
   }
 }
 
