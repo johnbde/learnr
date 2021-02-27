@@ -1,5 +1,6 @@
 
 .pageContent {
+    display: none;
 }
 
 .band {
@@ -44,7 +45,7 @@
 }
 
 .topics .section.level2.current {
-  display: none;
+  display: block;
 }
 
 .topicsContainer {
