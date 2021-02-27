@@ -29,7 +29,6 @@
 }
 
 .topics {
-  display: none;  
   width: 75%;
   overflow-x: auto;
   padding-bottom: 600px;
