@@ -38,17 +38,13 @@
   border-bottom: 3px dotted #f0f0f0;
 }
 
-.section {
-  display: none;
-}
-
 .topics .section.level2 {
   display: none;
   margin-bottom: 40px;
 }
 
 .topics .section.level2.current {
-  display: block;
+  display: none;
 }
 
 .topicsContainer {
